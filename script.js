@@ -2,7 +2,7 @@ const rock = document.getElementById("rock");
 const paper = document.getElementById("paper");
 const scissors = document.getElementById("scissors");
 const choices = [rock, paper, scissors];
-const humanScoreDiplay = document.querySelector(".human-score");
+const humanScoreDiplay = document.querySelector(".player-score");
 const computerScoreDiplay = document.querySelector(".computer-score");
 
 let humanScore = 0;
@@ -22,7 +22,6 @@ function playingGame() {
       if (choices.includes(e.target.parentNode)) {
         const humanChoice = game(e.target.parentNode.dataset.choice);
         const computerChoice = aiGame();
-
         if (
           (humanChoice === "rock" && computerChoice === "paper") ||
           (humanChoice === "paper" && computerChoice === "scissors") ||
