@@ -1,0 +1,48 @@
+body {
+  background-color: #333652;
+  .header {
+    text-align: center;
+    .score {
+      color: #e9eaec;
+    }
+    h1 {
+      color: #90adc6;
+    }
+    .score {
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      font-size: 24px;
+      span {
+        margin-right: 15px;
+        font-size: 24px;
+      }
+      div {
+        font-size: 24px;
+        margin-right: 15px;
+      }
+    }
+  }
+  .game-wrapper {
+    display: flex;
+    justify-content: center;
+    h3 {
+      color: #fad02c;
+    }
+    div {
+      margin: 20px;
+      text-align: center;
+      color: green;
+      // border: 1px solid red;
+      cursor: pointer;
+      background-color: #333652;
+
+      img {
+        // border: 1px solid red;
+        border-radius: 15px;
+        height: 150px;
+        width: 100px;
+      }
+    }
+  }
+}
